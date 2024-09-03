@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hounter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white font-[Lexend]">
+    <main>
+      <!-- Hero Section -->
+      <section class="h-screen relative">
+        <img class="absolute" src="./assets/img/BlurHeroSection.svg" alt="blur">
+        <!-- Navbar -->
+        <nav class="absolute flex justify-between top-10 right-20 left-20 z-10">
+          <a href="#" class="flex items-center gap-3">
+            <img src="./assets/img/logo.svg" alt="logo" class="w-9" />
+            <p class="font-bold text-[16px]">Hounter</p>
+          </a>
+          <div class="font-semibold text-[14px] flex gap-12">
+            <div class="flex gap-8 items-center text-white">
+              <a
+                href="#"
+                class="py-2 px-4 ring-1 ring-white rounded-full hover:text-[#047857] hover:bg-white"
+                >About Us</a
+              >
+              <a
+                href="#"
+                class="py-2 px-4 ring-1 ring-white rounded-full hover:text-[#047857] hover:bg-white"
+                >Article</a
+              >
+              <a
+                href="#"
+                class="flex gap-2 py-2 px-4 ring-1 ring-white rounded-full hover:text-[#047857] hover:bg-white"
+                >Property <i data-lucide="chevron-down" class="inline-block"></i
+              ></a>
+            </div>
+            <a
+              href="#"
+              class="bg-[#D1FAE5] text-[#047857] hover:bg-[#047857] hover:text-[#D1FAE5] flex items-center leading-5 py-3 px-6 rounded-full"
+              >Sign Up!</a
+            >
+          </div>
+        </nav>
+        <!-- Carousel -->
+        <div
+          id="controls-carousel"
+          class="relative w-full h-full z-0"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-screen overflow-hidden rounded-lg">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <div class="w-full h-full flex">
+                <div class="flex-1 mt-36 mr-20 ml-32">
+                  <div class="flex flex-col gap-8">
+                    <h1
+                      class="capitalize text-5xl text-[#1B1C57] font-bold leading-[60px]"
+                    >
+                      find the place to live
+                      <span
+                        class="bg-[#1B1C57] text-white text-nowrap px-2 rounded-lg"
+                        >your dream</span
+                      >
+                      easily here
+                    </h1>
+                    <p class="text-[#626687] text-base">
+                      Everything you need about finding your place to live will
+                      be here, where it will be easier for you
+                    </p>
+                    <div
+                      class="flex items-center gap-2 ring-1 ring-[#E0E3EB] rounded-full"
+                    >
+                      <img class="ml-4" src="./assets/img/Location.svg" alt="location" />
+                      <input
+                        class="border-none flex-1 focus:ring-0"
+                        type="text"
+                        placeholder="Search for the location you want!"
+                      />
+                      <button class="flex items-center bg-[#10B981] rounded-full px-3 py-3 mx-1 my-1 text-white">
+                        Search <i data-lucide="chevron-right"></i>
+                      </button>
+                    </div>
+                    <p>Our Partnership</p>
+                    <div class="flex gap-12">
+                      <img src="./assets/img/traveloka_logo 2.png" alt="logo" />
+                      <img src="./assets/img/traveloka_logo 3.png" alt="logo" />
+                      <img src="./assets/img/traveloka_logo 4.png" alt="logo" />
+                      <img src="./assets/img/traveloka_logo 5.png" alt="logo" />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/img/HeroImage2.svg"
+                  alt="HeroImage1"
+                  class="left-0 h-full object-contain"
+                />
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <div class="w-full h-full flex">
+                <div class="flex-1 mt-36 mr-20 ml-32">
+                  <div class="flex flex-col gap-8">
+                    <h1
+                      class="capitalize text-5xl text-[#1B1C57] font-bold leading-[60px]"
+                    >
+                      find the place to live
+                      <span
+                        class="bg-[#1B1C57] text-white text-nowrap px-2 rounded-lg"
+                        >your dream</span
+                      >
+                      easily here
+                    </h1>
+                    <p class="text-[#626687] text-base">
+                      Everything you need about finding your place to live will
+                      be here, where it will be easier for you
+                    </p>
+                    <div
+                      class="flex items-center gap-2 ring-1 ring-[#E0E3EB] rounded-full"
+                    >
+                      <img class="ml-4" src="./assets/img/Location.svg" alt="location" />
+                      <input
+                        class="border-none flex-1 focus:ring-0"
+                        type="text"
+                        placeholder="Search for the location you want!"
+                      />
+                      <button class="flex items-center bg-[#10B981] rounded-full px-3 py-3 mx-1 my-1 text-white">
+                        Search <i data-lucide="chevron-right"></i>
+                      </button>
+                    </div>
+                    <p>Our Partnership</p>
+                    <div class="flex gap-12">
+                      <img src="./assets/img/traveloka_logo 2.png" alt="logo" />
+                      <img src="./assets/img/traveloka_logo 3.png" alt="logo" />
+                      <img src="./assets/img/traveloka_logo 4.png" alt="logo" />
+                      <img src="./assets/img/traveloka_logo 5.png" alt="logo" />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/img/HeroImage1.svg"
+                  alt="HeroImage1"
+                  class="left-0 h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full pl-16 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <!-- class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none" -->
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#D9D9D9] hover:bg-gray-200"
+            >
+              <svg
+                class="w-4 h-4 text-[#b3b3b3] rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-16 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#D9D9D9] hover:bg-gray-200"
+            >
+              <svg
+                class="w-4 h-4 text-[#b3b3b3] rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Feature Section -->
+       <section class="mt-20 mx-32">
+        <div class="flex gap-4 items-center">
+          <div class="h-[2px] w-12 bg-[#F59E0B]"></div>
+          <p class="text-[#F59E0B]">Our Recommendation</p>
+        </div>
+        <div class="flex justify-between">
+          <h1 class="text-2xl font-bold text-[#1B1C57]">Featured House</h1>
+          <div class="flex gap-6 text-[#888B97]">
+            <button class="flex gap-2 ring-[1px] items-center justify-center rounded-full px-4 py-2 ring-[#888B97] text-[#10b981] bg-[#d1fae5]"><img src="./assets/img/House.png" alt=""></i>House</button>
+            <button class="flex gap-2 ring-[1px] items-center justify-center rounded-full px-4 py-2 ring-[#888B97]"><img src="./assets/img/Villa.png" alt=""></i>Villa</button>
+            <button class="flex gap-2 ring-[1px] items-center justify-center rounded-full px-4 py-2 ring-[#888B97]"><img src="./assets/img/Apartment.png" alt=""></i>Apartment</button>
+          </div>
+          <div class="flex gap-3">
+            <button class="bg-[#e0e2eb] px-3 py-2 rounded-full"><i data-lucide="chevron-left"></i></button>
+            <button class="bg-[#10b981] px-3 py-2 rounded-full text-white"><i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="mt-10 flex justify-between">
+          <div class="flex flex-col gap-4">
+            <div class="relative">
+              <img class="object-cover" src="./assets/img/Feature1.png" alt="feature1">
+              <div class="absolute text-[#EF4444] bottom-2 left-2 flex items-center gap-2 bg-[#fee2e2] px-2 py-2 rounded-full">
+                <img src="./assets/img/Fire.png" alt="Fire">
+                Popular
+              </div>
+            </div>
+            <h1 class="text-2xl">Roselands House</h1>
+            <p class="text-[#3C4563]">$ 35.000.000</p>
+            <div class="flex gap-4">
+              <img class="object-contain" src="./assets/img/Avatar1.png" alt="avatar1">
+              <div>
+                <h2>Dianne Russell</h2>
+                <p class="text-sm text-[#888B97]">Manchester, Kentucky</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex flex-col gap-4">
+            <div class="relative">
+              <img class="object-cover" src="./assets/img/Feature2.png" alt="feature1">
+              <div class="absolute text-[#1d4ed8] bottom-2 left-2 flex gap-2 bg-[#dbeafe] px-2 py-2 rounded-full">
+                <img src="./assets/img/House.svg" alt="House">
+                New House
+              </div>
+            </div>
+            <h1 class="text-2xl">Woodlandside</h1>
+            <p class="text-[#3C4563]">$ 20.000.000</p>
+            <div class="flex gap-4">
+              <img class="object-contain" src="./assets/img/Avatar2.png" alt="avatar1">
+              <div>
+                <h2>Robert Fox</h2>
+                <p class="text-sm text-[#888B97]">Dr. San Jose, South Dakota</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex flex-col gap-4">
+            <div class="relative">
+              <img class="object-cover" src="./assets/img/Feature1.png" alt="feature1">
+              <div class="absolute text-[#EF4444] bottom-2 left-2 flex items-center gap-2 bg-[#fee2e2] px-2 py-2 rounded-full">
+                <img src="./assets/img/Wallet.png" alt="Wallet">
+                Best Deals
+              </div>
+            </div>
+            <h1 class="text-2xl">The Old Lighthouse</h1>
+            <p class="text-[#3C4563]">$ 44.000.000</p>
+            <div class="flex gap-4">
+              <img class="object-contain" src="./assets/img/Avatar3.png" alt="avatar1">
+              <div>
+                <h2>Ronald Richards</h2>
+                <p class="text-sm text-[#888B97]">Santa Ana, Illinois</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- Ready Section -->
+        <section class="relative">
+          <img class="absolute top-0 right-0 h-[600px]" src="./assets/img/BlurReadySection.png" alt="blur">
+          <div class="flex mt-20 mx-32 items-center">
+            <div class="flex flex-col flex-1 gap-4">
+              <div class="flex gap-4 items-center">
+                <div class="h-[2px] w-12 bg-[#F59E0B]"></div>
+                <p class="text-[#F59E0B]">Ready To Sell</p>
+              </div>
+              <h1 class="text-3xl font-bold text-[#1B1C57]">Let’s tour and see our house!</h1>
+              <p class="text-sm text-[#626687] w-96">Houses recommended by our partners that have been curated to become the home of your dreams!</p>
+              <h2 class="text-base text-[#1B1C57] font-semibold">House Detail</h2>
+              <div class="flex justify-between w-96 border-b-2 pb-5">
+                <div class="flex flex-col gap-4 text-[#3C4563]">
+                  <div class="flex gap-4 items-center">
+                    <img src="./assets/img/bed 1.png" alt="bed">
+                    <p>4 Bedrooms</p>
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <img src="./assets/img/car-garage 1.png" alt="bed">
+                    <p>1 Carport</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-4 items-center">
+                    <img src="./assets/img/bath 1.png" alt="bath">
+                    <p>2 Bathrooms</p>
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <img src="./assets/img/stairs-with-handrail 1.png" alt="stair">
+                    <p>2 Floors</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-96 flex mt-2">
+                <img src="./assets/img/Avatar1.png" alt="avatar">
+                <div class="ml-4">
+                  <h2>Dianne Russell</h2>
+                  <p class="text-sm text-[#888B97]">Manager Director</p>
+                </div>
+                <button class="ml-8 bg-[#10B981] px-3 py-2 text-white flex gap-2 rounded-full items-center">
+                  <img src="./assets/img/fluent_call-20-filled.svg" alt="phone">
+                  Contact Now
+                </button>
+              </div>
+            </div>
+            <img src="./assets/img/ReadyImage.png" alt="image">
+          </div>
+        </section>
+
+        <!-- About Section -->
+         <section class="relative h-screen">
+          <img src="./assets/img/BlurAboutSection.png" alt="blur" class="absolute bottom-0 left -0">
+          <div class="mt-32 mx-32 flex flex-col items-center gap-4">
+            <div class="h-[2px] w-12 bg-[#F59E0B]"></div>
+            <p class="text-[#F59E0B]">See tips and trick from our partnership</p>
+            <h1 class="text-3xl font-bold text-[#1B1C57] w-[420px] text-center capitalize">Find out more about selling and buying homes</h1>
+            <button class="bg-[#10B981] px-3 py-2 text-white rounded-full">More Article!</button>
+            <div class="flex w-full gap-10 z-[10]">
+              <div class="flex-1 flex flex-col gap-5">
+                <div class="flex gap-4">
+                  <img src="./assets/img/AboutImage4.png" alt="image">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex gap-2 items-center">
+                      <img src="./assets/img/Avatar1.png" alt="avatar">
+                      <p class="text-sm text-[#3C4563]">Dianne Russell</p>
+                    </div>
+                    <h1 class="text-[#1B1C57] text-lg font-semibold">The things we need to check when we want to buy a house</h1>
+                    <div class="flex gap-2">
+                      <img src="./assets/img/ic_round-access-time.png" alt="clock">
+                      <p class="text-sm text-[#888B97]">4 min read | 25 Apr 2021</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="flex gap-4">
+                  <img src="./assets/img/AboutImage3.png" alt="image">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex gap-2 items-center">
+                      <img src="./assets/img/Avatar2.png" alt="avatar">
+                      <p class="text-sm text-[#3C4563]">Courtney Henry</p>
+                    </div>
+                    <h1 class="text-[#1B1C57] text-lg font-semibold">7 Ways to distinguish the quality of the house we want to buy</h1>
+                    <div class="flex gap-2">
+                      <img src="./assets/img/ic_round-access-time.png" alt="clock">
+                      <p class="text-sm text-[#888B97]">6 min read | 24 Apr 2021</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <img src="./assets/img/AboutImage2.png" alt="image">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex gap-2 items-center">
+                      <img src="./assets/img/Avatar3.png" alt="avatar">
+                      <p class="text-sm text-[#3C4563]">Darlene Robertson</p>
+                    </div>
+                    <h1 class="text-[#1B1C57] text-lg font-semibold">The best way to know the quality of the house we want to buy</h1>
+                    <div class="flex gap-2">
+                      <img src="./assets/img/ic_round-access-time.png" alt="clock">
+                      <p class="text-sm text-[#888B97]">2 min read | 24 Apr 2021</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="flex-1 flex gap-3 flex flex-col">
+                <img class="object-contain" src="./assets/img/AboutImage1.png" alt="image">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/img/Avatar1.png" alt="avatar">
+                  <p class="text-sm text-[#3C4563]">Cameron Williamson</p>
+                </div>
+                <h1 class="text-[#1B1C57] text-2xl font-semibold capitalize">12 Things to know before buying a house</h1>
+                <p class="text-sm text-[#888B97]">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
+                <div class="flex gap-4">
+                  <img src="./assets/img/ic_round-access-time.png" alt="clock">
+                  <p class="text-sm text-[#888B97]">8 min read | 25 Apr 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         </section>
+
+         <!-- Subscribe Section -->
+          <section class="mt-20 rounded-3xl mx-32 gap-8 flex flex-col items-center justify-center bg-[url('./assets/img/Subscribe.png')] bg-no-repeat bg-cover h-64">
+            <h1 class="text-[#1B1C57] font-bold text-3xl w-[400px] text-center">Subscribe For More Info and update from Hounter</h1>
+            <div class="flex items-center gap-2 bg-white pl-4 rounded-full shadow">
+              <img class="" src="./assets/img/eva_email-fill.png" alt="mail">
+              <input class="border-none focus:ring-0" type="email" placeholder="Your email here">
+              <button class="text-white bg-[#10B981] py-3 rounded-full px-4">Subcribe Now</button>
+            </div>
+          </section>
+
+          <!-- Footer Section -->
+           <section class="mt-28 relative pb-20 w-full">
+            <img class="absolute w-full bottom-0" src="./assets/img/BlurFooterSection.png" alt="">
+            <div class="mx-32 flex justify-between">
+              <div class="flex flex-col gap-4">
+                <a href="#" class="flex items-center gap-3">
+                  <img src="./assets/img/logo.svg" alt="logo" class="w-9" />
+                  <p class="font-bold text-[16px]">Hounter</p>
+                </a>
+                <p class="text-sm text-[#626687] w-80">We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+                <div class="flex gap-8">
+                  <img src="./assets/img/brandico_facebook.png" alt="brandico_facebook">
+                  <img src="./assets/img/ant-design_twitter-outlined.png" alt="twitter">
+                  <img src="./assets/img/ant-design_instagram-filled.png" alt="instagram">
+                </div>
+              </div>
+              <div class="flex gap-12">
+                <div class="flex flex-col gap-4 text-sm text-[#888B97]">
+                  <h2 class="text-lg text-[#0E1735] font-semibold">Property</h2>
+                  <p>House</p>
+                  <p>Apartment</p>
+                  <p>Villa</p>
+                </div>
+                
+                <div class="flex flex-col gap-4 text-sm text-[#888B97]">
+                  <h2 class="text-lg text-[#0E1735] font-semibold">Article</h2>
+                  <p>New Article</p>
+                  <p>Popular Article</p>
+                  <p>Most Read</p>
+                  <p>Tips & Tricks</p>
+                </div>
+                
+                <div class="flex flex-col gap-4 text-sm text-[#888B97]">
+                  <h2 class="text-lg text-[#0E1735] font-semibold">Contact</h2>
+                  <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+                  <p>(671) 555-0110</p>
+                  <p>info@hounter.com</p>
+                </div>
+                
+              </div>
+            </div>
+           </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
